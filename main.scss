@@ -11,13 +11,21 @@ body {
   background: #2ddf5c;
   padding: 8px 16px;
   width: 100%;
-  div {
+  > div {
     display: inline-block;
   }
 }
 
 .main-nav {
   display: inline-block;
+  text-align: right;
+  width: calc(100% - 49px - 4px);
+}
+
+.main-nav__items {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
 
 .main-nav__item {
