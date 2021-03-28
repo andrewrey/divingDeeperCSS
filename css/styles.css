@@ -29,9 +29,19 @@ body {
   margin: 0;
   padding: 0;
   list-style-type: none; }
+  .main-nav__items li:not(:last-child) {
+    margin-right: 25px; }
 
 .main-nav__item {
   display: inline-block; }
+  .main-nav__item a {
+    display: block;
+    text-decoration: none;
+    color: #0e4f1f; }
+    .main-nav__item a:hover {
+      color: white; }
+    .main-nav__item a:active {
+      color: white; }
 
 #product-overview {
   background: #ff1b68;

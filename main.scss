@@ -1,3 +1,5 @@
+$base-color: #0e4f1f;
+
 * {
   box-sizing: border-box;
 }
@@ -17,7 +19,7 @@ body {
   }
 }
 .main-header__brand {
-  color: #0e4f1f;
+  color: $base-color;
   text-decoration: none;
   font-weight: bold;
   font-size: 1.375rem;
@@ -34,10 +36,26 @@ body {
   margin: 0;
   padding: 0;
   list-style-type: none;
+  li:not(:last-child) {
+    margin-right: 25px;
+  }
 }
 
 .main-nav__item {
   display: inline-block;
+
+  a {
+    display: block;
+    text-decoration: none;
+    color: $base-color;
+
+    &:hover {
+      color: white;
+    }
+    &:active {
+      color: white;
+    }
+  }
 }
 
 #product-overview {
