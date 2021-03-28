@@ -45,15 +45,33 @@ body {
   display: inline-block;
 
   a {
-    display: block;
     text-decoration: none;
     color: $base-color;
+    font-weight: bold;
+    padding: 3px 0;
 
-    &:hover {
-      color: white;
-    }
+    &:hover,
     &:active {
       color: white;
+      border: {
+        bottom: 5px solid white;
+      }
+    }
+  }
+}
+
+.main-nav__item--cta {
+  a {
+    color: white;
+    background-color: #ff1b68;
+    padding: 8px 16px;
+    border-radius: 8px;
+
+    &:hover,
+    &:active {
+      color: #ff1b68;
+      background-color: white;
+      border: none;
     }
   }
 }
